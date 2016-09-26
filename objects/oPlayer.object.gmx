@@ -62,8 +62,8 @@ vfric = vmaxspd / (vmaxspd + vgrav);
             <string>
 dir = point_direction(x, y, mouse_x, mouse_y);
 
-hspd += hgrav * (keyboard_check(vk_right) - keyboard_check(vk_left));
-vspd += vgrav * (keyboard_check(vk_down) - keyboard_check(vk_up));
+hspd += hgrav * (keyboard_check(ord('D')) - keyboard_check(ord('A')));
+vspd += vgrav * (keyboard_check(ord('S')) - keyboard_check(ord('W')));
 
 hspd *= hfric;
 vspd *= vfric;
