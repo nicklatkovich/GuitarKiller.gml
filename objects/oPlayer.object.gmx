@@ -96,10 +96,16 @@ y += vspd;
           <argument>
             <kind>1</kind>
             <string>
-yy = y + lengthdir_y(4, dy * 5);
+yy = round(y + lengthdir_y(4, dy * 5));
+xx = round(x);
 
-draw_sprite(sPlayer, 0, x, yy);
-draw_sprite_ext(sGuitar, 0, x, yy, 1, 1, dir, c_white, 1);
+if (lengthdir_x(1, dir) &lt; 0) {
+    draw_sprite_ext(sPlayer, 0, xx, yy, -1, 1, 0, c_white, 1);
+    draw_sprite_ext(sGuitar, 0, xx, yy, 1, -1, dir, c_white, 1);
+} else {
+    draw_sprite(sPlayer, 0, xx, yy);
+    draw_sprite_ext(sGuitar, 0, xx, yy, 1, 1, dir, c_white, 1);
+}
 
 </string>
           </argument>
