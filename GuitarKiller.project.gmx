@@ -8,6 +8,12 @@
   <sprites name="sprites"/>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\appsurf_resize.gml</script>
+  </scripts>
+  <objects name="objects">
+    <object>objects\oAppSurf</object>
+  </objects>
   <help>
     <rtf>help.rtf</rtf>
   </help>
