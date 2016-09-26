@@ -5,7 +5,10 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\sPlayer</sprite>
+    <sprite>sprites\sGuitar</sprite>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -15,6 +18,8 @@
   <objects name="objects">
     <object>objects\oAppSurf</object>
     <object>objects\oFPSViewer</object>
+    <object>objects\oPlayer</object>
+    <object>objects\oGame</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_init</room>
